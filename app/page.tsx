@@ -35,9 +35,8 @@ const TestJWTPage = () => {
 		const body = {
 			name: "test update",
 		};
-
 		const res = await fetch(
-			`${process.env.NEXT_PUBLIC_DJANGO_API_URL}/api/products/${499}`,
+			`${process.env.NEXT_PUBLIC_DJANGO_API_URL}/api/products/${599}`,
 			{
 				method: "PATCH",
 				headers: {
@@ -76,7 +75,6 @@ const TestJWTPage = () => {
 	
 	return (
 		<main className="h-screen grid place-content-center">
-			<h1 className="text-5xl "> Login</h1>
 			<button
 				onClick={handleLogin}
 				className="my-4 p-4 bg-blue-600 rounded-xl text-3xl text-gray-100"
